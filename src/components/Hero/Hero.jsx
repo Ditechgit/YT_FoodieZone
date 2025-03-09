@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import bgImg from "../../assets/vector3.png";
 import Food1 from "../../assets/biryani2.png";
 import Food2 from "../../assets/biryani3.png";
@@ -29,13 +29,44 @@ const bgImage = {
 };
 
 const Hero = () => {
-  const [imageId, setImageId0] = useState(Food1);
+  const [imageId, setImageId] = useState(Food1);
 
   return (
-    <div style={bgImage} className='min-h-[550px] sm:min-h-[600px] bg-gray-100 dark:bg-gray-950 dark:text-white duration-200 flex justify-center items-center'>
-      <div className='container pb-8 sm:pb-0'></div>
+    <div
+      style={bgImage}
+      className="min-h-[550px] sm:min-h-[600px] bg-gray-100 dark:bg-gray-950 dark:text-white duration-200 flex justify-center items-center"
+    >
+      <div className="container pb-8 sm:pb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
+          {/* text content section */}
+          <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+              Welcome to the Foodie
+            </h1>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              placeat perspiciatis inventore et maxime? Quia aperiam esse
+              voluptatibus doloremque voluptas.
+            </p>
+            <div>
+              <button className="bg-gradient-to-r from-amber-400 to-amber-600 text-white px-4 py-2 rounded-full hover:scale-105 duration-200">
+                Order Now
+              </button>
+            </div>
+          </div>
+          {/* Image section */}
+          <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
+            {/*main image section */}
+            <div className="flex justify-center items-center">
+              <img src={imageId} alt="" className="w-[300px] sm:w-[450px] mx-auto spin"/>
+            </div>
+            {/*image list section */}
+            <div></div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
