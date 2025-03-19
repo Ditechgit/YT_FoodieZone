@@ -1,5 +1,8 @@
 import React from "react";
+import Food1 from "../../assets/biryani5.png";
 import { GrSecure } from "react-icons/gr";
+import { IoFastFood } from "react-icons/io5";
+import { GiFoodTruck } from "react-icons/gi";
 
 const Banner = () => {
   return (
@@ -15,7 +18,7 @@ const Banner = () => {
               {/* Image Section*/}
               <div>
                 <img
-                  src="{Food1}"
+                  src={Food1}
                   alt=""
                   className="max-w-[430px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0, 0, 0, 0.1)]"
                 />
@@ -31,10 +34,21 @@ const Banner = () => {
                   <br />
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint facilis iure optio vero veniam dignissimos perferendis officia minus tempore similique?  
                   </p>
-                  <div>
+                  <div className="flex gap-6">
                     <div>
-                        <GrSecure className="text-4xl" />
+                        <GrSecure className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-violet-100 dark:bg-violet-400" />
                     </div>
+                    <div>
+                        <IoFastFood className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-orange-100 dark:bg-orange-400" />
+                    </div>
+                    <div>
+                        <GiFoodTruck className="text-4xl h-20 w-20 shadow-sm p-5 rounded-full bg-green-100 dark:bg-green-400" />
+                    </div>
+                  </div>
+                  <div>
+                    <button className="bg-gradient-to-r from-amber-400 to-amber-600 text-white px-6 py-3 rounded-full hover:scale-105 duration-200">
+                      Order Now
+                    </button>
                   </div>
                 </div>
               </div>
