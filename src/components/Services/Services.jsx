@@ -29,7 +29,7 @@ const Services = () => {
   return (
     <>
       <div className="py-10">
-        <div className="px-12">
+        <div className="px-12 ">
           {/* Header Section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">
@@ -43,7 +43,7 @@ const Services = () => {
           </div>
           {/* Card Section */}
           <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-item-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 md:gap-5 place-items-center ">
               {ServicesData.map(({ id, img, name, description }) => {
                 return <div key={id} className="max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-amber-400 hover:text-white duration-300 p-4 shadow-xl">
                   <div className="h-[100px]">
