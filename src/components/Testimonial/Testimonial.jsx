@@ -1,6 +1,20 @@
 import React from "react";
 
 const Testimonial = () => {
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnHover: true,
+    pauseOnFocus: true,
+  };
+
   return (
     <>
       <div className="py-10">
@@ -17,6 +31,9 @@ const Testimonial = () => {
             </p>
           </div>
           {/* testimonial section */}
+          <div className="grid grid-cols-1 max-w-[600px] mx-auto gap-6">
+            <Slider {...settings}></Slider>
+          </div>
         </div>
       </div>
     </>
