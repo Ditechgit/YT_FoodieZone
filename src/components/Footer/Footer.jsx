@@ -1,5 +1,6 @@
 import React from "react";
 import FooterLogo from "../../assets/food-logo.png";
+import { FaLocationArrow, FaMobileAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -12,7 +13,23 @@ const Footer = () => {
                 <img src={FooterLogo} alt="" className="max-w-[50px]" />
                 FOODIE
               </h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Officia sit aspernatur ullam autem fugiat labore quia sint,
+                laboriosam ab. Cupiditate.
+              </p>
+              <br />
+              <div className="flex items-center gap-3 ">
+                <FaLocationArrow />
+                <p>Noida, Uttar Pradesh</p>
+              </div>
+              <div className="flex items-center gap-3 mt-3">
+                <FaMobileAlt />
+                <p>+91 123456789</p>
+              </div>
             </div>
+            {/* Social handles */}
+            
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10"></div>
           </div>
         </div>
