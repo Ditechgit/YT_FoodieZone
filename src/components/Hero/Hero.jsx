@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="container pb-8 sm:pb-0">
         <div className="grid grid-cols-1 sm:grid-cols-2">
           {/* text content section */}
-          <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+          <div data-aos="zoom-out" data-aos-duration="400" data-aos-once="true" className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
               Welcome to the Foodie
             </h1>
@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="order-1 sm:order-2 min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative">
             {/*main image section */}
             <div className="flex justify-center items-center h-[300px] sm:h-[450px] overflow-hidden">
-              <img
+              <img data-aos="zoom-out" data-aos-duration="300" data-aos-once="true"
                 src={imageId}
                 alt=""
                 className="w-[300px] sm:w-[450px] mx-auto spin"
@@ -67,7 +67,7 @@ const Hero = () => {
             {/*image list section */}
             <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
               {ImageList.map((item) => (
-                <img
+                <img data-aos="zoom-out" data-aos-duration="400" data-aos-once="true"
                   key={item.id}
                   src={item.img}
                   onClick={() => {
